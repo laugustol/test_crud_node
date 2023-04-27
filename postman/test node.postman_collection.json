@@ -181,7 +181,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:4000/api/posts",
+					"raw": "localhost:4000/api/posts?startDate=2023-04-24 00:00:00&endDate=2023-04-25 23:00:00",
 					"host": [
 						"localhost"
 					],
@@ -189,6 +189,16 @@
 					"path": [
 						"api",
 						"posts"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2023-04-24 00:00:00"
+						},
+						{
+							"key": "endDate",
+							"value": "2023-04-25 23:00:00"
+						}
 					]
 				}
 			},
