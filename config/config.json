@@ -1,0 +1,26 @@
+{
+    "development": {
+        "username": "root",
+        "password": "1234",
+        "database": "test_node",
+        "host": "localhost",
+        "dialect": "mysql",
+        "modelsPath": "./src/models"
+    },
+    "test": {
+        "username": "root",
+        "password": "1234",
+        "database": "test_node",
+        "host": "localhost",
+        "dialect": "mysql",
+        "modelsPath": "./src/models"
+    },
+    "production": {
+        "username": "root",
+        "password": "1234",
+        "database": "test_node",
+        "host": "localhost",
+        "dialect": "mysql",
+        "modelsPath": "./src/models"
+    }
+}

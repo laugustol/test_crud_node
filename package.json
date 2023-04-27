@@ -1,0 +1,34 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./src/index.js",
+        "dev": "nodemon ./src/index.js",
+        "migrate": "npx sequelize-cli db:migrate",
+        "migrate:rollback": "npx sequelize-cli db:migrate:undo:all",
+        "seeders": "npx sequelize-cli db:seed:all",
+        "seeders:rollback": "npx sequelize-cli db:seed:undo:all",
+        "test": "jest",
+        "test:coverage": "jest --coverage"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-validator": "^7.0.1",
+        "jsonwebtoken": "^9.0.0",
+        "mongoose": "^5.7.8",
+        "mysql2": "^3.2.3",
+        "sequelize": "^6.31.0"
+    },
+    "devDependencies": {
+        "jest": "^29.5.0",
+        "nodemon": "^1.19.4",
+        "supertest": "^6.3.3"
+    }
+}
