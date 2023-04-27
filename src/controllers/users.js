@@ -21,7 +21,7 @@ module.exports = {
                 );
                 if (isValid) {
                     user = user.toJSON();
-                    const token = jwt.sign({ ...user }, "secretamsodaomd");
+                    const token = jwt.sign({ ...user }, process.env.SECRET);
                     user.token = token;
                     delete user.password;
                     return res
